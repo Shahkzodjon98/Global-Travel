@@ -39,7 +39,7 @@ const NavBar = () => {
   // };
 
   return (
-    <nav className="img py-5 p-10">
+    <nav className="img1 py-5 p-10">
       <div className="container flex justify-between items-center">
         <Link href="/">
           <h1 className="text-white text-3xl sm:text-4xl font-normal font-['Poppins'] leading-10">
