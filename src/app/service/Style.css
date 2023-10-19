@@ -1,0 +1,35 @@
+.img{
+    background-image: url("../service/assets/image3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  .Rect1{
+    background-image: url("../service/assets/Rectangle\ 21.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Rect2{
+    background-image: url("../service/assets/Rectangle\ 21\ \(1\).svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Rect3{
+    background-image: url("../service/assets/Rectangle\ 21\ \(2\).svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Rect4{
+    background-image: url("../service/assets/Rectangle\ 24.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }

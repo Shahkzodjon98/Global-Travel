@@ -1,0 +1,13 @@
+.img{
+    background-image: url('../assets/img.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Rectangle20{
+    background-image: url('../assets/Rectangle\ 20.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
