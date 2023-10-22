@@ -54,7 +54,7 @@ const NavNews = () => {
         } mt-5 xl:mt-0 space-x-10 `}
       >
       <ul className="list-none sm:flex text-[#3D3E48] text-base  font-'Poppins' leading-7">
-        <Link href="/home">Home</Link>
+        <Link href="/">Home</Link>
       </ul>
       <ul className="list-none sm:flex text-[#3D3E48] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
      

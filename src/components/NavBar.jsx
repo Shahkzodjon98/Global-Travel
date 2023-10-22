@@ -91,7 +91,7 @@ const NavBar = () => {
   } mt-5 xl:mt-0 space-x-10 md:hidden `}
 >
   <ul className="list-none sm:flex text-[#fff] text-base font-bold font-'Poppins' leading-7">
-    <Link href="/home">Home</Link>
+    <Link href="#">Home</Link>
   </ul>
   <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/discover">Discover</Link>
