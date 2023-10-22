@@ -71,7 +71,7 @@ const NavNews = () => {
                 color: selected ? "#43B97F" : "#43B97F",
               }}
             >
-        <Link href="/news">News</Link>
+        <Link href="/new">News</Link>
         </li>
 
       </ul>

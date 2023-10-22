@@ -74,7 +74,7 @@ const NavService = () => {
 
       </ul>
       <ul className="list-none sm:flex text-[#3D3E48] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
-        <Link href="/news">News</Link>
+        <Link href="/new">News</Link>
       </ul>
       <ul className="list-none sm:flex text-[#3D3E48] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
         <Link href="/about">About Us</Link>

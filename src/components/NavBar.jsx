@@ -100,7 +100,7 @@ const NavBar = () => {
     <Link href="/service">Services</Link>
   </ul>
   <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
-    <Link href="/news">News</Link>
+  <Link href="/new">News</Link>
   </ul>
   <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/about">About Us</Link>
@@ -173,7 +173,7 @@ const NavBar = () => {
       </p>
   </div>
 
-  <div className=" w-full md:w-[820px] bg-white rounded-lg shadow">
+  <div className=" w-full md:w-[830px] bg-white rounded-lg shadow">
         <form
           className="flex flex-col items-center justify-center md:flex-row my-[9px] md:p-0 py-3 space-y-5 md:space-y-0 md:space-x-5"
           onSubmit={(e) => {
@@ -188,7 +188,7 @@ const NavBar = () => {
               placeholder="City or Destination"
               value={cityOrDestination}
               onChange={handleCityOrDestinationChange}
-              className="block border-0 outline-none bg-transparent"
+              className="block border-0 outline-none bg-transparent md:text-start text-center"
             />
           </div>
 
@@ -207,7 +207,7 @@ const NavBar = () => {
       <DatePicker
       selected={selectedDate}
       onChange={(date) => setSelectedDate(date)}
-      className=" outline-none text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block font-'Poppins'  pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      className=" outline-none text-gray-900 text-sm text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block font-'Poppins'  pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       placeholderText="Date of stay"
       />
       </div>
@@ -220,11 +220,11 @@ const NavBar = () => {
               placeholder="Person"
               value={person}
               onChange={handlePersonChange}
-              className="block border-0 outline-none bg-transparent "
+              className="block border-0 outline-none bg-transparent md:text-start text-center "
             />
           </div>
-          <div className="md:w-[168px] xl:h-[49px] md:p-2 p-2 bg-[#43B97F] rounded-[10px] flex items-center text-center justify-center space-x-1">
-            <button className="text-white font-normal font-'Poppins'" type="submit">
+          <div className="md:w-[168px] xl:h-[49px] md:p-2 p-2 bg-[#43B97F] relative md:left-5  left-0 rounded-[10px] flex items-center text-center justify-center space-x-2 ">
+            <button className="text-white font-normal font-'Poppins' " type="submit">
               Find Trip Now
             </button>
             <BsSearch className="text-[24px] text-white rounded-50 border-0 outline-none cursor-pointer" />
