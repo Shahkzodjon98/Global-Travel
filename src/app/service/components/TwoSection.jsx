@@ -2,7 +2,7 @@ const TwoSection = () => {
   return (
     <div>
 <div className="w-full flex items-center justify-center mx-auto my-10">
-<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-center items-center">
+<div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  justify-center items-center ">
         <div className="flex items-center flex-col">
             <div className="p-[54px] space-y-[10px]">
               <svg
@@ -29,17 +29,17 @@ const TwoSection = () => {
                 </defs>
               </svg>
 
-              <h1 className="text-zinc-700 text-xl font-bold font-['Poppins'] leading-[34.56px]">
+              <h1 className="text-zinc-700 text-xl font-bold font-'Poppins' leading-[34.56px]">
                 Get Best Price
               </h1>
-              <p className="w-[280px] text-zinc-700 text-base font-normal font-['Poppins'] leading-7">
+              <p className="w-[280px] text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 arcu eu, dui tortor, proin eu lectus pellentesque. A cras
                 suscipit amet{" "}
               </p>
               <button
                 type="submit"
-                className="text-white text-base font-normal font-['Poppins'] leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
+                className="text-white text-base font-normal font-'Poppins' leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
               >
                 READ MORE
               </button>
@@ -62,17 +62,17 @@ const TwoSection = () => {
                 />
               </svg>
 
-              <h1 className="text-zinc-700 text-xl font-bold font-['Poppins'] leading-[34.56px]">
+              <h1 className="text-zinc-700 text-xl font-bold font-'Poppins' leading-[34.56px]">
                 All Destination
               </h1>
-              <p className="w-[280px] text-zinc-700 text-base font-normal font-['Poppins'] leading-7">
+              <p className="w-[280px] text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 arcu eu, dui tortor, proin eu lectus pellentesque. A cras
                 suscipit amet{" "}
               </p>
               <button
                 type="submit"
-                className="text-white text-base font-normal font-['Poppins'] leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
+                className="text-white text-base font-normal font-'Poppins' leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
               >
                 READ MORE
               </button>
@@ -103,17 +103,17 @@ const TwoSection = () => {
                 />
               </svg>
 
-              <h1 className="text-zinc-700 text-xl font-bold font-['Poppins'] leading-[34.56px]">
+              <h1 className="text-zinc-700 text-xl font-bold font-'Poppins' leading-[34.56px]">
                 City Tours
               </h1>
-              <p className="w-[280px] text-zinc-700 text-base font-normal font-['Poppins'] leading-7">
+              <p className="w-[280px] text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 arcu eu, dui tortor, proin eu lectus pellentesque. A cras
                 suscipit amet{" "}
               </p>
               <button
                 type="submit"
-                className="text-white text-base font-normal font-['Poppins'] leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
+                className="text-white text-base font-normal font-'Poppins' leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
               >
                 READ MORE
               </button>
@@ -144,17 +144,17 @@ const TwoSection = () => {
                 />
               </svg>
 
-              <h1 className="text-zinc-700 text-xl font-bold font-['Poppins'] leading-[34.56px]">
+              <h1 className="text-zinc-700 text-xl font-bold font-'Poppins' leading-[34.56px]">
                 Photography
               </h1>
-              <p className="w-[280px] text-zinc-700 text-base font-normal font-['Poppins'] leading-7">
+              <p className="w-[280px] text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 arcu eu, dui tortor, proin eu lectus pellentesque. A cras
                 suscipit amet{" "}
               </p>
               <button
                 type="submit"
-                className="text-white text-base font-normal font-['Poppins'] leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
+                className="text-white text-base font-normal font-'Poppins' leading-7 px-[15px] py-[5px] bg-[#43B97F] rounded-[15px]"
               >
                 READ MORE
               </button>
