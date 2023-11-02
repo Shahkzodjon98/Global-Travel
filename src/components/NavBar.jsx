@@ -12,7 +12,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from 'react-i18next';
 
 
 const NavBar = () => {
@@ -42,10 +42,10 @@ const NavBar = () => {
   };
 
 
-  // const { i18n} = useTranslation();
-  // const changeLang = (lang) => {
-  //   i18n.changeLanguage(lang);
-  // };
+    const { i18n, t } = useTranslation();
+    const changeLang = (lang) => {
+      i18n.changeLanguage(lang);
+    };
 
 
 
@@ -74,7 +74,7 @@ const NavBar = () => {
 
   return (
     <nav className="img1 py-[24.5px] px-5 mx-auto ">
-      <div className="container flex justify-between items-center mx-auto">
+      <div className="container flex justify-between items-center mx-auto ">
         <Link href="/">
           <h1 className="text-white text-3xl sm:text-4xl font-normal font-'Poppins' leading-10">
             Travelaja
@@ -83,74 +83,73 @@ const NavBar = () => {
   
 
 
-
 {/* Mobile Menu */}
 <div
   className={`xl:flex xl:items-center ${
-    menuOpen ? "block" : "hidden"
-  } mt-5 xl:mt-0 space-x-10 md:hidden `}
+    menuOpen ? "block absolute bg-white w-full left-0 top-[100px] " : "hidden"
+  } xl:mt-0 xl:space-x-10 md:hidden flex flex-col xl:flex-row items-center justify-center`}
 >
-  <ul className="list-none sm:flex text-[#fff] text-base font-bold font-'Poppins' leading-7">
-    <Link href="#">Home</Link>
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] text-base font-bold font-'Poppins' leading-7">
+    <Link href="#">{t('home')}</Link>
   </ul>
-  <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/discover">Discover</Link>
   </ul>
-  <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/service">Services</Link>
   </ul>
-  <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
-  <Link href="/new">News</Link>
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
+    <Link href="/news">News</Link>
   </ul>
-  <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/about">About Us</Link>
   </ul>
-  <ul className="list-none sm:flex text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
+  <ul className="py-3 xl:py-0 text-black mx-4 list-none sm:flex md:text-[#efecec] hover:text-[#43B97F] text-base font-normal font-'Poppins' leading-7">
     <Link href="/contact">Contact</Link>
   </ul>
 </div>
 
+{/* Language Selector */}
+<div className="-space-y-1 group">
+  <div className="flex items-center space-x-2 cursor-pointer">
+    <img
+      src={
+        languageData.find((lang) => lang.code === currentLanguage).flag
+      }
+      width={18}
+      height={18}
+      alt=""
+      className="bg-none"
+    />
+    <p className="text-white text-base font-bold font-'Poppins' leading-7">
+      {currentLanguage}
+    </p>
+    <AiFillCaretDown className="text-[16px] text-white" />
+  </div>
 
-      {/* Language Selector */}
-      <div className="-space-y-1 group">
-        <div className="flex items-center space-x-2 cursor-pointer">
-          <img
-            src={
-              languageData.find((lang) => lang.code === currentLanguage).flag
-            }
-            width={18}
-            height={18}
-            alt=""
-            className="bg-none"
-          />
-          <p className="text-white text-base font-bold font-'Poppins' leading-7">
-            {currentLanguage}
-          </p>
-          <AiFillCaretDown className="text-[16px] text-white" />
-        </div>
+  <div className="absolute hidden group-hover:block mt-2 space-y-2">
+    {languageData.map((lang) => (
+      <button
+        key={lang.code}
+        onClick={() => changeLanguage(lang.code)}
+        className={`language-button ${
+          currentLanguage === lang.code ? "active" : ""
+        } cursor-pointer block bg-[#295943] hover:bg-[#3D3E48] text-[#ffffff] font-bold font-'Poppins' py-2 px-4 rounded-lg transition duration-300 ease-in-out`}
+      >
+        <img
+          src={lang.flag}
+          width={18}
+          height={18}
+          alt=""
+          className="bg-none"
+        />
+        {lang.name}
+      </button>
+    ))}
+  </div>
+</div>
 
-        <div className="absolute hidden group-hover:block mt-2 space-y-2">
-          {languageData.map((lang) => (
-            <button
-              key={lang.code}
-              onClick={() => changeLanguage(lang.code)}
-              className={`language-button ${
-                currentLanguage === lang.code ? "active" : ""
-              } cursor-pointer block bg-[#295943] hover.bg-[#3D3E48] text-[#ffffff] font-bold font-'Poppins' py-2 px-4 rounded-lg transition duration-300 ease-in-out`}
-            >
-              <img
-                src={lang.flag}
-                width={18}
-                height={18}
-                alt=""
-                className="bg-none"
-              />
-              {lang.name}
-            </button>
-          ))}
-        </div>
-      </div>
-        {/* Hamburger Menu Icon */}
+{/* Hamburger Menu Icon */}
 <div className="xl:hidden md:flex items-center justify-center cursor-pointer text-center ">
   <button
     onClick={() => setMenuOpen(!menuOpen)}
@@ -161,7 +160,7 @@ const NavBar = () => {
     </div>
   </button>
 </div>
-    </div>
+</div>
   
     <div className="flex justify-center items-center flex-col space-y-5 py-[10%]">
   <div className="my-10 space-y-4">
@@ -194,20 +193,11 @@ const NavBar = () => {
 
       <div className="relative max-w-sm">
       <div className="absolute inset-y-0 -left-5  font-'Poppins' flex items-center pointer-events-none md:border-l md:border-0 border-b border-zinc-700">
-      <svg
-          className="w-4 h-4 text-gray-500 dark:text-gray-400 mx-1 "
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-        </svg>
       </div>
       <DatePicker
       selected={selectedDate}
       onChange={(date) => setSelectedDate(date)}
-      className=" outline-none text-gray-900 text-sm text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block font-'Poppins'  pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      className=" outline-none text-gray-900 text-sm text-center rounded-lg focus:ring-blue-500 focus:border-blue-500 block font-'Poppins'   p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       placeholderText="Date of stay"
       />
       </div>

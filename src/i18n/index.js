@@ -1,19 +1,31 @@
-// import i18n from "i18next";
-// import { initReactI18next } from "react-i18next";
-// import Backend from "i18next-http-backend";
+// i18n.js
 
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
 
+i18n
+  .use(initReactI18next) // passes i18n down to react-i18next
+  .init({
+    resources: {
+      UZ: {
+        translation: {
+          home: 'Hello, world! (Uzbek)',
+        },
+      },
+      EN: {
+        translation: {
+          dsdas: 'Hello, world! (English)',
+        },
+      },
+      RU: {
+        translation: {
+          kjghjg: 'Hello, world! (Russian)',
+        },
+      },
+      // Add more languages and translations as needed
+    },
+    lng: 'UZ', // default language
+    fallbackLng: 'UZ',
+  });
 
-
-// i18n
-//   .use(Backend)
-//   .use(initReactI18next)
-//   .init({
-//     debug: true,
-//     interpolation: {
-//         escapeValue: false
-//     },
-//     fallbackLang: "uz",
-//     languages: ["en", "uz", "ru"],
-//     lng: 'uz'
-//   });
+export default i18n;

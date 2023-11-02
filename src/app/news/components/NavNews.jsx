@@ -47,12 +47,13 @@ const NavNews = () => {
       </Link>
 
 
-    {/* Mobile Menu */}
-    <div
-        className={`xl:flex xl:items-center  ${
-          menuOpen ? "block" : "hidden"
-        } mt-5 xl:mt-0 space-x-10 `}
-      >
+ 
+  {/* Mobile Menu */}
+<div
+  className={`xl:flex xl:items-center ${
+    menuOpen ? "block absolute bg-white w-full left-0 top-[60px] " : "hidden"
+  } xl:mt-0 xl:space-x-10 md:hidden flex flex-col xl:flex-row items-center justify-center`}
+>
       <ul className="list-none sm:flex text-[#3D3E48] text-base  font-'Poppins' leading-7">
         <Link href="/">Home</Link>
       </ul>
@@ -71,7 +72,7 @@ const NavNews = () => {
                 color: selected ? "#43B97F" : "#43B97F",
               }}
             >
-        <Link href="/new">News</Link>
+        <Link href="/news">News</Link>
         </li>
 
       </ul>

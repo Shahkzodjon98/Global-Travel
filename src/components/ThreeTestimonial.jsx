@@ -11,10 +11,10 @@ const ThreeTestimonial = () => {
     <>
       <div className="flex items-center justify-center mx-auto my-10 md:my-16 xl:my-20">
         <div className="  flex items-center flex-col  mx-auto">
-          <p className="text-teal-900 text-base font-bold font-Poppins leading-7">
+          <p className="text-teal-900 text-base font-bold font-'Poppins' leading-7">
             Testimonial
           </p>
-          <h1 className="text-zinc-700 text-2xl md:text-3xl xl:text-3xl font-bold font-Poppins leading-8">
+          <h1 className="text-zinc-700 text-2xl md:text-3xl xl:text-3xl font-bold font-'Poppins' leading-8">
             What they say about us
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8 md:my-12 xl:my-16">
@@ -52,16 +52,16 @@ const ThreeTestimonial = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="p-4 bg-transparent transform transition-transform hover:scale-110 cursor-pointer group hover:bg-[#43B97F] duration-300"
+                className="p-4 bg-transparent transform transition-transform md:hover:scale-110 cursor-pointer group hover:bg-[#43B97F] duration-300"
               >
                 <div className="flex items-center gap-4">
                   <Image src={item.icon} width={50} height={50} alt="icon" />
-                  <h1 className="text-zinc-700 text-xl font-bold font-Poppins leading-7 group-hover:text-white">
+                  <h1 className="text-zinc-700 text-xl font-bold font-'Poppins' leading-7 group-hover:text-white">
                     {item.name}
                   </h1>
                 </div>
                 <div className="my-6">
-                  <p className="w-full md:w-[359px] xl:w-[359px] text-zinc-700 text-base font-normal font-Poppins leading-7 group-hover:text-white">
+                  <p className="w-full md:w-[359px] xl:w-[359px] text-zinc-700 text-base font-normal font-'Poppins' leading-7 group-hover:text-white">
                     {item.text}
                   </p>
                 </div>

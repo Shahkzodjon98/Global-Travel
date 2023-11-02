@@ -15,17 +15,17 @@ const OneTravelersPoint = () => {
           />
 
           <div className="flex flex-col items-start p-4">
-            <p className="text-teal-900 text-base font-bold font-Poppins leading-7">
+            <p className="text-teal-900 text-base font-bold font-'Poppins' leading-7">
               Travelers Point
             </p>
 
             <div className="my-4">
-              <h1 className="text-zinc-700 text-2xl md:text-3xl font-bold font-Poppins leading-9">
+              <h1 className="text-zinc-700 text-2xl md:text-3xl font-bold font-'Poppins' leading-9">
                 We help you find your dream place
               </h1>
             </div>
 
-            <p className="w-full md:w-[575px] text-zinc-700 text-base font-normal font-Poppins leading-7">
+            <p className="w-full md:w-[575px] text-zinc-700 text-base font-normal font-'Poppins' leading-7">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               aliquam, purus sit amet luctus venenatis, lectus magna fringilla
               urna, porttitor rhoncus dolor purus. Non enim praesent elementum
@@ -33,34 +33,34 @@ const OneTravelersPoint = () => {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-2 gap-24 ">
               <div className=" flex flex-col py-6">
-                <span className="text-[#295943] text-[27.65px] font-bold font-Poppins leading-[33.18px]">
+                <span className="text-[#295943] text-[27.65px] font-bold font-'Poppins' leading-[33.18px]">
                   100+
                 </span>
-                <p className="text-zinc-700 text-base font-normal font-Poppins leading-7">
+                <p className="text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                   Holiday Package
                 </p>
                 <div className=" my-10">
-                  <span className="text-[#295943] text-[27.65px] font-bold font-Poppins leading-[33.18px]">
+                  <span className="text-[#295943] text-[27.65px] font-bold font-'Poppins' leading-[33.18px]">
                     68
                   </span>
-                  <p className="text-zinc-700 text-base font-normal font-Poppins leading-7">
+                  <p className="text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                     Elite Transportation
                   </p>
                 </div>
               </div>
 
               <div className=" flex flex-col py-6 ">
-                <span className="text-[#295943] text-[27.65px] font-bold font-Poppins leading-[33.18px]">
+                <span className="text-[#295943] text-[27.65px] font-bold font-'Poppins' leading-[33.18px]">
                   172
                 </span>
-                <p className="text-zinc-700 text-base font-normal font-Poppins leading-7">
+                <p className="text-zinc-700 text-base font-normal font-'Poppins' leading-7">
                   Hotels
                 </p>
                 <div className=" my-10">
-                  <span className="text-[#295943] text-[27.65px] font-bold font-Poppins leading-[33.18px]">
+                  <span className="text-[#295943] text-[27.65px] font-bold font-'Poppins' leading-[33.18px]">
                     32M+
                   </span>
-                  <p className="text-zinc-700 text-base font-normal font-Poppins md:items-center flex justify-center   leading-7">
+                  <p className="text-zinc-700 text-base font-normal font-'Poppins' md:items-center flex justify-center   leading-7">
                     We help to find your dream place
                   </p>
                 </div>

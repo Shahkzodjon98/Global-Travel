@@ -9,10 +9,11 @@ const config: Config = {
 
   ],
   theme: {
-    fontFamily: {
-     poppins: "Poppins"
-    },
+    
     extend: {
+      fontFamily: {
+        poppins: "Poppins"
+       },
     },
   },
   plugins: [require("tw-elements/dist/plugin.cjs")],

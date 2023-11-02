@@ -1,34 +1,50 @@
 "use client";
 
-import axios from "axios";
-import { useState } from "react";
+
+import { useState } from 'react';
+import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const TwoContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post("/api/submitForm", {
         name,
         email,
         message,
       });
-
+  
       if (response.data.success) {
-        // Form submitted successfully
-        console.log("Form submitted successfully!");
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: 'Successfully!',
+          showConfirmButton: false,
+          timer: 1500,
+        });
       } else {
-        // Form submission failed
-        console.error("Form submission failed.");
+        Swal.fire({
+          position: 'top-center',
+          icon: 'error',
+          title: 'Form submission failed',
+          text: `Server response: ${response.data}`,
+        });
       }
     } catch (error) {
-      console.error("An error occurred:", error);
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Error',
+        text: error.message,
+      });
     }
   };
+  
 
   return (
     <div>
